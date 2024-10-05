@@ -58,7 +58,3 @@ if st.button("Calculate Position"):
     st.write(f"Position after 1 hour: (x: {pos['x']:.2f}, y: {pos['y']:.2f}, z: {pos['z']:.2f})")
 
 # Optional: Add a refresh button
-if st.button("Refresh Position"):
-    # Calculate position with current inputs
-    pos = calculate_position(a, e, i, omega, w, nu, time_increment)
-    st.write(f"Current Position: (x: {pos['x']:.2f}, y: {pos['y']:.2f}, z: {pos['z']:.2f})")
